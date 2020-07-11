@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyStopwatch</title>
+    <link rel="stylesheet" href="watch.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.js">
+</head>
+
+<body class="bg-dark">
+    <center>
+        <h1 style="font-size:60px;" class="text-light">StopWatch</h1><br><br>
+    </center>
+    <div class="container p-0">
+        <div class="row ml-2">
+            <div  class="col-3"><h1 class="text-light" style="font-size: 3vw; text-align: center;">Minutes</h1></div>
+            <div class="col-1"></div>
+            
+            <div class="col-3"><h1 class="text-light" style="font-size: 3vw;text-align: center;">Seconds</h1></div>
+            <div class="col-1"></div>
+            
+            <div class="col-3"><h1 class="text-light" style="font-size: 3vw;text-align: center;">Milliseconds</h1></div>
+        </div>
+        <div class="row ml-2">
+            <div class="col-3 rounded circle"><h1 id="min" class="center1">00</h1></div>
+            <div class="col-1 rounded circle"><h1 class="center1">:</h1></div>
+            <div class="col-3 rounded circle"><h1 id="sec" class="center1">00</h1></div>
+            <div class="col-1 rounded circle"><h1 class="center1">:</h1></div>
+            <div class="col-3 rounded circle"><h1 id="msec" class="center1">00</h1></div>
+            
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 col-lg-3 mt-2"></div>
+            <div class="col-12 col-lg-2 mt-2"><button id="startbtn" onclick="start()" type="button" class="btn btn-light btnwid">Start</button></div>
+            <div class="col-12 col-lg-2 mt-2"><button onclick="stop()"  type="button" class="btn btn-light btnwid ">Stop</button></div>
+            <div class="col-12 col-lg-2 mt-2"><button onclick="reset()" type="button" class="btn btn-light btnwid ">Reset</button></div>
+            <div class="col-12 col-lg-3 mt-2"></div>
+        </div>
+        
+    </div>
+
+    <script src="swatch.js"></script>
+</body>
+
+</html>
